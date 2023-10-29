@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wiggling-div {
+  animation: wiggle 10.0s infinite;
+  transition: none;
+}
+
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(1640px);
+  }
+}
+
+.wiggling-div2 {
+  animation: wiggle2 10.0s infinite;
+  transition: none;
+}
+
+@keyframes wiggle2 {
+
+  0%,
+  100% {
+    transform: translateX(1600px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.bg1 {
+  background-image: url("./images/Vector\ 17.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  background-image: url("./images/Vector\ 18.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
